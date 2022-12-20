@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $cream;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: $white;
+    max-width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.photo-container {
+    width: 100%;
+    display: block;
+}
+
+.texts-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    padding: 32px;
+}
+
+.photo {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: 'Fraunces', cursive;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1;
+    color: $very-dark-blue;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+p, .previous-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dark-grayish-blue;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 0;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-family: 'Fraunces', cursive;
+    font-weight: 700;
+    font-size: 42px;
+    color: $dark-cyan;
+}
+
+.previous-price {
+    margin-left: 24px;
+    text-decoration: line-through;
+}
+
+.button-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $dark-cyan;
+    border-radius: 10px;
+    padding: 20px;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($dark-cyan, 15%)
+    }
+
+    margin-top: 20px;
+}
+
+.cart-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: $white;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        height: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
