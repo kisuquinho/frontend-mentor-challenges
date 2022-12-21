@@ -4,18 +4,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-## Overview
-
-### Screenshot
-
-![Desktop Screenshot](/frontendmentor/qr-code-component-main/images/screenshotdesktop.png)
 
 ## My process
 
@@ -28,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Linkedin - [Joyciane Pinto](https://www.linkedin.com/in/joyciane/)
+- Linkedin - [Joyciane Moreira](https://www.linkedin.com/in/joyciane/)
 - Frontend Mentor - [@kisuquinho](https://www.frontendmentor.io/profile/kisuquinho)
 
 ## Acknowledgments

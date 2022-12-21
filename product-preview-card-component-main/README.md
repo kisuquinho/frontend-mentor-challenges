@@ -6,7 +6,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -22,10 +21,6 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover state for interactive elements
-
-### Screenshot
-
-![Desktop Screenshot](/frontendmentor/product-preview-card-component-main/images/screenshot%20desktop.png)
 
 ## My process
 
@@ -51,7 +46,7 @@ Users should be able to:
 
 ## Author
 
-- Linkedin - [Joyciane Pinto](https://www.linkedin.com/in/joyciane/)
+- Linkedin - [Joyciane Moreira](https://www.linkedin.com/in/joyciane/)
 - Frontend Mentor - [@kisuquinho](https://www.frontendmentor.io/profile/kisuquinho)
 
 ## Acknowledgments
