@@ -64,7 +64,8 @@ body {
     align-items: center;
     background-color: var(--clr-primary-300);
     background-image: url(/frontendmentor/order-summary-component-main/images/pattern-background-desktop.svg);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 720px) {
