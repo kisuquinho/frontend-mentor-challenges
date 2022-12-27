@@ -23,7 +23,7 @@
     margin: 0;
   }
   
-  html, body {
+  /*html,*/ body {
     height: 100%;
   }
   
@@ -58,6 +58,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--clr-neutral-350);
     display: flex;
     justify-content: center;
@@ -171,6 +172,7 @@ li {
 
 @media screen and (max-width: 580px) {
     body {
+        height: 100%;
         align-items: flex-start;
     }
 

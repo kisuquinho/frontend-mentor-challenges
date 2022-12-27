@@ -29,7 +29,7 @@
     margin: 0;
   }
   
-  html, body {
+  /*html,*/ body {
     height: 100%;
   }
   
@@ -68,7 +68,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
 }
 
@@ -170,6 +169,7 @@ h6 {
 
 @media screen and (max-width: 920px) {
     body {
+        height: 100%;
         align-items: flex-start;
     }
 
