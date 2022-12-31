@@ -1,0 +1,322 @@
+:root {
+    --ff: 'League Spartan', sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --clr-primary-700: hsl(300, 43%, 22%);
+    --clr-primary-300: hsl(333, 80%, 67%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-300: hsl(300, 24%, 96%);
+    --clr-neutral-400: hsl(303, 10%, 53%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-100);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 82px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-stars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: 410px;
+}
+
+.cards-stars {
+    padding-left: 96px;
+    display: grid;
+    gap: 22px;
+}
+
+.card-stars {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 444px;
+    border-radius: 6px;
+    background-color: var(--clr-neutral-300);
+    padding: 18px 0px;
+    transition: .5s ease;
+}
+
+.card-stars:nth-child(1) {
+    transform: translateX(-96px);
+}
+
+.card-stars:nth-child(2) {
+    transform: translateX(-48px);
+}
+
+.stars {
+    margin-left: 32px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.star {
+    transition: .33s ease;
+}
+
+.cards-review {
+    margin-top: 72px;
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: column;
+    padding: 16px 0;
+}
+
+.card-review {
+    background-color: var(--clr-primary-700);
+    padding: 40px 32px;
+    border-radius: 8px;
+}
+
+.card-review:nth-child(1) {
+    transform: translateY(-16px);
+}
+
+.card-review:nth-child(2) {
+    transform: translateY(0px);
+}
+
+.card-review:nth-child(3) {
+    transform: translateY(16px);
+}
+
+.costumer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.costumer-texts {
+    margin-left: 22px;
+}
+
+h1 {
+    color: var(--clr-primary-700);
+    font-size: 3.238rem;
+    font-weight: var(--fw-bold);
+    line-height: 95%;
+    margin-bottom: 24px;
+}
+
+p {
+    color: var(--clr-neutral-400);
+    font-size: 1.125rem;
+    font-weight: var(--fw-medium);
+    line-height: 139.5%;
+    letter-spacing: -0.198px;
+}
+
+h3, h5, h6 {
+    font-size: 1.063rem;
+}
+
+h3 {
+    color: var(--clr-primary-700);
+    font-weight: var(--fw-bold);
+    padding-left: 32px;
+}
+
+h5 {
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+    margin-bottom: 3px;
+}
+
+h6 {
+    color: var(--clr-primary-300);
+    font-weight: var(--fw-regular);
+}
+
+.card-review > p {
+    color: var(--clr-neutral-100);
+    font-size: 1.063rem;
+    line-height: 127.5%;
+    letter-spacing: -0.272px;
+}
+
+.star:hover {
+    transform: scale(1.25);
+}
+
+.card-stars:nth-child(1):hover {
+    transform: translate(-96px, -4px) scale(1.01);
+}
+
+.card-stars:nth-child(2):hover {
+    transform: translate(-48px, -4px) scale(1.01);
+}
+
+.card-stars:nth-child(3):hover {
+    transform: translate(0px, -4px) scale(1.01);
+}
+
+.avatar-container::before {
+    content: '';
+    z-index: -10000;
+    background-color: var(--clr-primary-300);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transition: .5s ease;
+}
+
+.avatar-container:hover::before {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 996px) {
+    body {
+        align-items: flex-start;
+        height: 100%;
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+    .main-stars {
+        flex-direction: column;
+    }
+
+    h1, .desc {
+        text-align: center;
+    }
+
+    .cards-stars {
+        padding-left: 0;
+        width: 100%;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .card-stars:nth-child(1) {
+        transform: translateX(0px);
+    }
+
+    .card-stars:nth-child(2) {
+        transform: translateX(0px);
+    }
+
+    .card-stars {
+        width: 100%;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 0px;
+        gap: 14px;
+    }
+
+    .stars {
+        margin-left: 0px;
+    }
+
+    h3 {
+        padding-left: 0px;
+    }
+
+    .cards-review {
+        margin-top: 48px;
+    }
+
+    h1 {
+        font-size: 2.438rem;
+        line-height: 81.5%;
+        letter-spacing: -0.975px;
+    }
+
+    .cards-review {
+        grid-auto-flow: initial;
+        grid-template-areas: 
+        ". a a ."
+        "b b c c";
+        gap: 16px;
+        padding: 0;
+    }
+
+    .card-review:nth-child(1) {
+        transform: translateY(0px);
+        grid-area: a;
+    }
+
+    .card-review:nth-child(2) {
+        transform: translateY(0px);
+        grid-area: b;
+    }
+
+    .card-review:nth-child(3) {
+        transform: translateY(0px);
+        grid-area: c;
+    }
+
+    .card-stars:nth-child(1):hover {
+        transform: translate(0px, -4px) scale(1.01);
+    }
+    
+    .card-stars:nth-child(2):hover {
+        transform: translate(0px, -4px) scale(1.01);
+    }
+    
+    .card-stars:nth-child(3):hover {
+        transform: translate(0px, -4px) scale(1.01);
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .cards-review {
+        grid-template-areas: none;
+        grid-auto-flow: row;
+    }
+    
+    .card-review:nth-child(1) {
+        transform: translateY(0px);
+        grid-area: auto;
+    }
+
+    .card-review:nth-child(2) {
+        transform: translateY(0px);
+        grid-area: auto;
+    }
+
+    .card-review:nth-child(3) {
+        transform: translateY(0px);
+        grid-area: auto;
+    }
+}
