@@ -31,16 +31,20 @@ body {
 .container {
   max-width: 730px;
   background-color: var(--clr-100);
-  margin: 48px 24px;
+  margin: 72px 24px;
   border-radius: 8px;
-  overflow: hidden;
   display: grid;
   align-items: stretch;
   position: relative;
+  box-shadow: 0px 60px 36px rgba(27, 78, 67, 0.01),
+    0px 27px 27px rgba(27, 78, 67, 0.02), 0px 7px 15px rgba(27, 78, 67, 0.02),
+    0px 0px 0px rgba(27, 78, 67, 0.03);
 }
 
 .photo {
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .texts {
@@ -105,6 +109,7 @@ h6 {
 .share-btn {
   filter: invert(51%) sepia(6%) saturate(1598%) hue-rotate(175deg)
     brightness(95%) contrast(88%);
+  transition: 0.33s ease;
 }
 
 .share-active {
@@ -161,6 +166,10 @@ ul {
   cursor: pointer;
 }
 
+.triangle {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     height: 100vh;
@@ -174,7 +183,12 @@ ul {
   .photo-container {
     width: 285px;
     height: 100%;
-    background-color: red;
+  }
+
+  .photo {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 
   .texts {
@@ -190,9 +204,38 @@ ul {
   p {
     margin-bottom: 20px;
   }
+
+  .share-active {
+    width: 248px;
+    height: 55px;
+    justify-content: center;
+    border-radius: 8px;
+    bottom: 96px;
+    left: auto;
+    right: -67px;
+  }
+
+  .share-active-btn-container {
+    display: none;
+  }
+
+  .triangle {
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom: 0;
+    border-top: 12px solid var(--clr-600);
+  }
 }
 
 .social:hover {
   cursor: pointer;
   transform: scale(1.2) translateY(-2px);
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
 }

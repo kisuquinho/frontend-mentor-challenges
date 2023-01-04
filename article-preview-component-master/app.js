@@ -1,7 +1,6 @@
-function showSocials() {
-    document.querySelector('.share-active').classList.add('active');
-}
+document.querySelector('.share-btn-container').addEventListener("click", showHideSocials);
+document.querySelector('.share-active-btn-container').addEventListener("click", showHideSocials);
 
-function hideSocials() {
-    document.querySelector('.share-active').classList.remove('active');
+function showHideSocials() {
+    document.querySelector('.share-active').classList.toggle('active');
 }
