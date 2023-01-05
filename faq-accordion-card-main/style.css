@@ -1,0 +1,197 @@
+:root {
+  --clr-p-text-300: hsl(14, 88%, 65%);
+  --clr-p-text-600: hsl(238, 29%, 16%);
+  --clr-gradient: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  --clr-n-text-600: hsl(237, 12%, 33%);
+  --clr-n-text-500: hsl(240, 6%, 50%);
+  --clr-dividers: hsl(240, 5%, 91%);
+
+  --ff: "Kumbh Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  width: 100%;
+  height: 100%;
+  background: var(--clr-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 920px;
+  background-color: #ffffff;
+  margin: 180px 24px 90px 24px;
+  padding: 108px 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bg > img {
+  width: 240px;
+}
+
+.ill {
+  position: absolute;
+  top: -106px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.ill > img {
+  width: 236px;
+}
+
+.desktop-box {
+  display: none;
+}
+
+.desktop-ill {
+  display: none;
+}
+
+.desktop-bg {
+  display: none;
+}
+
+h1 {
+  font-size: 1.969rem;
+  font-weight: var(--fw-bold);
+  margin-top: 28px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 0.822rem;
+  font-weight: var(--fw-regular);
+  transition: 0.5s ease;
+}
+
+h3:hover {
+  color: var(--clr-p-text-300);
+}
+
+p {
+  font-size: 0.756rem;
+  line-height: 148.5%;
+}
+
+h3,
+p {
+  font-weight: var(--fw-regular);
+}
+
+.accordion {
+  width: 100%;
+  border-bottom: 1px solid var(--clr-dividers);
+  padding: 16px 0px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active > h3 {
+  font-weight: var(--fw-bold);
+}
+
+.active > p {
+  margin-top: 8px;
+}
+
+.dropdown-icon {
+  transform: rotate(0deg);
+  transition: 0.5s ease;
+}
+
+.active > .dropdown-icon {
+  transform: rotate(-180deg);
+}
+
+.answer {
+  max-height: 0px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.answer.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 888px) {
+  body {
+    height: 100vh;
+    align-items: center;
+  }
+
+  .container {
+    padding: 64px 0px;
+    margin: 0px 24px;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .faq {
+    flex-shrink: 1;
+    padding: 0;
+    margin: 0;
+    padding-right: 96px;
+  }
+
+  .bg,
+  .ill {
+    display: none;
+  }
+
+  .desktop-bg {
+    display: block;
+    position: absolute;
+    top: -63%;
+    left: -63%;
+  }
+
+  .desktop-ill {
+    width: 100%;
+    display: block;
+    transform: translateX(-88px);
+  }
+
+  .desktop-box {
+    display: block;
+    position: fixed;
+    top: 57.5%;
+    transform: translate(0, -50%);
+    left: 70px;
+    z-index: 10;
+  }
+
+  h1 {
+    margin-top: 0px;
+    text-align: start;
+  }
+}
