@@ -10,8 +10,8 @@ Challenge | Difficulty | Technologies
 [NFT preview card component](/frontendmentor/nft-preview-card-component-main/) | Newbie | HTML & CSS
 [Order summary component](/frontendmentor/order-summary-component-main/) | Newbie | HTML & CSS
 [Stats preview card component](/frontendmentor/stats-preview-card-component-main/) | Newbie | HTML & CSS
-[3-column preview card component](/frontendmentor/3-column-preview-card-component-main/) | Newbie | HTML & CSS
-[Profile card component](/kisuquinho/frontendmentor/profile-card-component-main/) | Newbie | HTML & CSS
+[3-column preview card component]([/frontendmentor/3-column-preview-card-component-main/](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/3-column-preview-card-component-main)) | Newbie | HTML & CSS
+[Profile card component](/kisuquinho/frontend-mentor-challenges/profile-card-component-main/) | Newbie | HTML & CSS
 [FAQ accordion card](/frontendmentor/faq-accordion-card-main/) | Newbie | HTML, CSS & JS
 [Social proof section](/frontendmentor/social-proof-section-master/) | Newbie | HTML & CSS
 [Article preview component](/frontendmentor/article-preview-component-master/) | Newbie | HTML, CSS & JS
