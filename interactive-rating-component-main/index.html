@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <section class="card">
+    <section id="rating-state">
+      <div class="star-container">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>
+         Please let us know how we did with your support request. All feedback is appreciated
+         to help us improve our offering!
+      </p>
+      <div id="ratings">
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </div>
+      <button id="submit">Submit</button>
+      <h6 id="error"></h6>
+    </section>
+    <section id="ty-state">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <h5 id="stars-selected"></h5>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </section>
+  </section>
+
+<script src="./app.js"></script>  
+</body>
+</html>

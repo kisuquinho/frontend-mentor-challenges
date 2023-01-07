@@ -183,6 +183,7 @@ p {
     padding: 12px;
     border-radius: 20px;
     width: 100%;
+    transition: 0.33s ease;
   }
 
   .error-btn {
