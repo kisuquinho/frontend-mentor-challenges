@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --ff: "Manrope", sans-serif;
+
+  --fw-extrabold: 800;
+
+  --clr-primary-300: hsl(193, 38%, 86%);
+  --clr-primary-400: hsl(150, 100%, 66%);
+
+  --clr-neutral-500: hsl(217, 19%, 38%);
+  --clr-neutral-600: hsl(217, 19%, 24%);
+  --clr-neutral-700: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+  font-weight: var(--fw-extrabold);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-neutral-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 540px;
+  background-color: var(--clr-neutral-600);
+  padding: 48px 24px 72px 24px;
+  position: relative;
+  text-align: center;
+  margin: 0px 16px;
+  border-radius: 16px;
+  opacity: 0;
+  animation: opacity 2s ease 1.5s forwards;
+}
+
+.intro-container {
+  position: absolute;
+  width: 20%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.intro {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    270deg,
+    #53ffab 0%,
+    rgba(83, 255, 171, 0.0846179) 91.54%,
+    rgba(83, 255, 171, 0) 100%
+  );
+  border-radius: 4px;
+  transform-origin: left;
+  transform: scaleX(0%);
+  animation: intro 1.85s cubic-bezier(0, 0.71, 0.53, 0.99) 0.25s forwards;
+}
+
+#advice_id {
+  color: var(--clr-primary-400);
+  font-size: 0.875rem;
+  letter-spacing: 3.57px;
+  text-transform: uppercase;
+}
+
+#advice {
+  color: var(--clr-primary-300);
+  line-height: 135.5%;
+  font-size: 1.75rem;
+  letter-spacing: -0.28px;
+  margin: 24px 0px 40px 0px;
+}
+
+picture > img {
+  width: 100%;
+}
+
+#dice-btn {
+  border: 0;
+  width: 64px;
+  height: 64px;
+  background-color: var(--clr-primary-400);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s ease;
+}
+
+#dice-btn:hover {
+  box-shadow: 0px 0px 43px #53ffa9;
+}
+
+#dice {
+  transform: rotate(-45deg);
+  animation: rotation 1.5s ease 4s forwards;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    border-radius: 8px;
+  }
+  #advice_id {
+    font-size: 0.688rem;
+    letter-spacing: 3.465;
+  }
+
+  #advice {
+    font-size: 1.5rem;
+    letter-spacing: -0.25;
+    margin: 24px 0px;
+  }
+}
+
+@keyframes intro {
+  0% {
+    transform-origin: left;
+    transform: scaleX(0%);
+  }
+  45% {
+    transform-origin: left;
+    transform: scaleX(100%);
+  }
+  50% {
+    transform-origin: right;
+    transform: scaleX(100%);
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  70% {
+    transform: rotate(90deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(90deg) scale(1);
+  }
+}
