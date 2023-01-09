@@ -22,3 +22,4 @@ Challenge | Difficulty | Technologies
 [Ping single column coming soon page](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/ping-coming-soon-page-master) | Newbie | HTML, CSS & JS
 [Huddle landing page with a single introductory section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/huddle-landing-page-with-single-introductory-section-master) | Newbie | HTML & CSS
 [Advice generator app](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/advice-generator-app-main) | Junior | HTML, CSS, JS & API
+[Testimonials grid section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/testimonials-grid-section-main) | Junior | HTML & CSS
