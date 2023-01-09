@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.testimonials {
+  margin: 72px 24px;
+  width: 100%;
+  max-width: 1110px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "a a b e"
+    "c d d e";
+  row-gap: 24px;
+  column-gap: 30px;
+}
+
+.testimonial {
+  color: white;
+  padding: 24px 32px 24px 32px;
+  border-radius: 6px;
+  display: grid;
+}
+
+h3 {
+  z-index: 1;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author_avatar {
+  width: 28px;
+  border-radius: 50%;
+}
+
+.a {
+  grid-area: a;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.a h6 {
+  color: #a775f2;
+}
+
+.a .author_avatar {
+  border: 2px solid #a775f2;
+}
+
+.a p {
+  color: #c399ff;
+}
+
+.b {
+  grid-area: b;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.b h6 {
+  color: #8f9aae;
+}
+
+.b p {
+  color: #b4bfd1;
+}
+
+.c {
+  grid-area: c;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.d {
+  grid-area: d;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.d h6 {
+  color: #808490;
+}
+
+.d .author_avatar {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.d p {
+  color: #aeb2bd;
+}
+
+.e {
+  grid-area: e;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.c h3,
+.e h3,
+.c h5,
+.e h5 {
+  color: hsl(217, 19%, 35%);
+}
+
+.c h6,
+.e h6 {
+  color: #bfc0c2;
+}
+
+.c p,
+.e p {
+  color: #b5b8bd;
+}
+
+h5 {
+  font-size: 0.806rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.691rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.269rem;
+  font-weight: 500;
+  line-height: 120.5%;
+  margin: 16px 0px;
+}
+
+p {
+  font-size: 0.816rem;
+  font-weight: 500;
+  line-height: 137%;
+}
+
+.testimonial:nth-child(1) {
+  position: relative;
+  z-index: -1;
+}
+
+#illustration {
+  position: absolute;
+  right: 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a b"
+      "c d d"
+      "e e e";
+    column-gap: 24px;
+  }
+
+  body {
+    height: 100%;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .testimonials {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+  }
+
+  .testimonial {
+    padding: 24px 32px 32px 32px;
+  }
+
+  #illustration {
+    right: 7%;
+  }
+}
