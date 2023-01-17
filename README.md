@@ -17,7 +17,7 @@ Challenge | Difficulty | Technologies
 [Article preview component](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/article-preview-component-master) | Newbie | HTML, CSS & JS
 [Four card feature section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/four-card-feature-section-master) | Newbie | HTML & CSS
 [Base Apparel coming soon page](soon) | Newbie | HTML, CSS & JS
-[Intro component with sign-up form](soon) | Newbie | HTML, CSS & JS
+[Intro component with sign-up form](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/intro-component-with-sign-up-form-master) | Newbie | HTML, CSS & JS
 [Single price grid component](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/single-price-grid-component-master) | Newbie | HTML & CSS
 [Ping single column coming soon page](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/ping-coming-soon-page-master) | Newbie | HTML, CSS & JS
 [Huddle landing page with a single introductory section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/huddle-landing-page-with-single-introductory-section-master) | Newbie | HTML & CSS
