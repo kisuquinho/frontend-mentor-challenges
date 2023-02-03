@@ -23,3 +23,5 @@ Challenge | Difficulty | Technologies
 [Huddle landing page with a single introductory section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/huddle-landing-page-with-single-introductory-section-master) | Newbie | HTML & CSS
 [Advice generator app](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/advice-generator-app-main) | Junior | HTML, CSS, JS & API
 [Testimonials grid section](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/testimonials-grid-section-main) | Junior | HTML & CSS
+[Fylo data storage component](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/fylo-data-storage-main) | Junior | HTML & CSS
+[Coding bootcamp testimonials slider](https://github.com/kisuquinho/frontend-mentor-challenges/tree/master/coding-bootcamp-testimonials-slider-master) | Junior | HTML, CSS & JS
